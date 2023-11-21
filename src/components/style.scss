@@ -1,0 +1,88 @@
+.root {
+  display: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15vw;
+  width: 100vw;
+  height: 100vh;
+  top:500px;
+  .form {
+    width: 80%;
+  }
+  .registerLink {
+    color: blue;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.users-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  list-style: none;
+  font-family: "Arial", sans-serif;
+
+  h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .user-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .header {
+    background-color: #eee;
+    font-weight: bold;
+  }
+
+  .user-id,
+  .user-name,
+  .user-username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .user-id {
+    width: 50px;
+  }
+
+  .user-name,
+  .user-username {
+    margin-left: 10px;
+    flex: 1;
+    overflow-x: auto;
+  }
+}
+
+.header {
+  background-color: #eee;
+  font-weight: bold;
+}
